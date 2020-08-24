@@ -13,6 +13,7 @@ body{
 font-family: 'Source Sans Pro', sans-serif;
     line-height:1.5;
     background-color: whitesmoke;
+    
 }
 h1, h2, h3, h4{
     font-family: 'Oxygen', sans-serif;
@@ -20,18 +21,24 @@ h1, h2, h3, h4{
     padding:2% 0;
     text-align:center;
     display:flex;
+    margin: auto;
     
 }
 h1{color:whitesmoke;}
-h2{color:green;
-margin: auto;}
+h2, h3{
+    color:green;
+margin: auto;
+display:flex;
+
+}
+
 
 p{  width: 80%;
     font-family: 'Source Sans Pro', sans-serif;
     text-align:center;
     display:flex;
     padding: 5%;
-    flex-flow: row;
+    flex-flow: column;
     margin: auto;
 }
 nav{display:flex;
@@ -61,12 +68,13 @@ margin:1%;
     width: 100%;
     margin: auto;
     height:auto;
+    background-size: cover;
     background:url('/Users/Czar/Desktop/LambdaProjects/HTML-CSS-Responsive-Practice/images/header.jpg');
 }
 .button{width: 15%;
 display:flex;
 justify-content: center;
-   
+   flex-flow:column;
     padding: 3%;
     margin:auto;
     
@@ -78,7 +86,7 @@ justify-content: center;
     
 }
 #about .aboutimg{
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -88,6 +96,7 @@ justify-content: center;
     height:auto;
     background:url('/Users/Czar/Desktop/LambdaProjects/HTML-CSS-Responsive-Practice/images/about-img.jpg');
     background-position: center;
+    background-size: cover;
 }
 .aboutText{
     display:flex;
@@ -109,4 +118,58 @@ justify-content: center;
     flex-direction: column;
    
     margin: auto;
+}
+.plantimg{display:flex;
+    width: 45%;
+  
+}
+.textPlant{display: flex;
+   
+    width: 100%;
+    
+}
+.textPlantOne{display: flex;
+   flex-direction: row-reverse;
+    width: 100%;
+    
+}
+
+.types{display: flex;
+    flex-flow: column;
+    margin: auto;
+    width: 50%;
+   
+padding:2%;
+}
+footer{
+    display:flex;
+    width:100%;
+background: green;
+align-items: center;
+}
+.footerimg{
+    
+    width:50%;
+    display:flex;
+    flex-direction: row;
+margin:auto;
+justify-content: flex-end;
+}
+.textLast{
+    color:whitesmoke;
+    display:flex;
+    flex-direction: column;
+    width:25%;
+    margin:5%;
+}
+footer, h2{
+    display:flex;
+    justify-content: center;
+    color:whitesmoke;
+    margin: auto;
+    border: 2px solid white;
+}
+.git{
+    margin:auto;
+    border:2px solid white;
 }
