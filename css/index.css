@@ -12,7 +12,7 @@ body{
     font-size:1.5rem;
 font-family: 'Source Sans Pro', sans-serif;
     line-height:1.5;
-    background-color: whitesmoke;
+    background-color: #fbfffb;
     
 }
 h1, h2, h3, h4{
@@ -24,12 +24,11 @@ h1, h2, h3, h4{
     margin: auto;
     
 }
-h1{color:whitesmoke;}
+h1{color:#fbfffb;}
 h2, h3{
     color:green;
 margin: auto;
 display:flex;
-
 }
 
 
@@ -45,55 +44,68 @@ nav{display:flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    
+    background-color:whitesmoke;
     }
+    .links{display: flex;
+        align-items: center;
+        background-color:ivory;
+    }
+    .shop{
+    padding:3%;
+        margin: auto;
+    }
+    .lnk{width: 75%;
+        display:flex;
+        justify-content: space-evenly;
+    flex-flow: row;}
+   
 a{padding:1%;
     text-decoration: none;
     display: flex;
-
-}
+color:green;
+transition: 1s;
+border:2px outset #fbfffb;
+border-radius:10%;
+} 
+a:hover{background-color: green;
+    color: ivory;
+    border:2px inset black;
+border-radius: 10%;}
     .logo{
     width:35%;
 display: flex;
-margin:1%;
 }
 #home{display:flex;
     flex-flow: column;
-    
-}
-.background{display:flex;
-    flex-direction: column;
     justify-content: center;
     align-content: center;
     width: 100%;
     margin: auto;
-    height:auto;
+    height:80vh;
     background-size: cover;
     background:url('/Users/Czar/Desktop/LambdaProjects/HTML-CSS-Responsive-Practice/images/header.jpg');
 }
-.button{width: 15%;
+.button{width: 30%;
 display:flex;
 justify-content: center;
    flex-flow:column;
     padding: 3%;
     margin:auto;
-    
+    background-color:green;
+    align-items: center;
 }
 .title{margin: auto;
-    
     padding: 5%;
     display:flex;
-    
+    flex-flow: column;
+    width:100%;
 }
-#about .aboutimg{
+.aboutSect{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    flex-direction: row;
+    justify-content: flex-end;
     width: 100%;
-    
-    margin: auto;
-    height:auto;
+    height:70vh;
     background:url('/Users/Czar/Desktop/LambdaProjects/HTML-CSS-Responsive-Practice/images/about-img.jpg');
     background-position: center;
     background-size: cover;
@@ -102,22 +114,13 @@ justify-content: center;
     display:flex;
     flex-direction: column;
     justify-content: center;
-   
     width: 50%;
-  
 }
-.aboutTitle{width: 80%;
-    display: flex;
-   align-items: center;
-   
-    margin: auto;
+#about h2{
+color:green;
 }
-.abtText{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-   
-    margin: auto;
+#plants h2{
+    color:green;
 }
 .plantimg{display:flex;
     width: 45%;
@@ -141,35 +144,156 @@ justify-content: center;
    
 padding:2%;
 }
-footer{
+.link{
+    width: 30%;
     display:flex;
-    width:100%;
+    justify-content: center;
+       flex-flow:column;
+        padding: 3%;
+        margin:auto; 
+       align-items: center;
+
+}
+#plants a{padding:1%;
+    text-decoration: none;
+    display: flex;
+
+color:ivory;
+transition: 1s;
+border:2px outset #fbfffb;
+border-radius:10%;
+background-color: green;
+} 
+
+.final{display: flex;
+    width: 100%;
+    flex-flow: row wrap;
 background: green;
 align-items: center;
-}
-.footerimg{
-    
-    width:50%;
+border: 3px outset black;
+    }
+
+.footerimg{ 
+    width:45%;
     display:flex;
     flex-direction: row;
 margin:auto;
-justify-content: flex-end;
-}
-.textLast{
-    color:whitesmoke;
-    display:flex;
-    flex-direction: column;
-    width:25%;
-    margin:5%;
+border:1px inset green
 }
 footer, h2{
     display:flex;
     justify-content: center;
     color:whitesmoke;
     margin: auto;
-    border: 2px solid white;
+
 }
-.git{
+.git{width: 100%;
     margin:auto;
-    border:2px solid white;
+}
+.textLast{
+    color:whitesmoke;
+    display:flex;
+    flex-direction:row;
+    width:45%;
+    margin:2%;
+}
+
+#contact a{
+    padding:1%;
+    text-decoration: none;
+    display: flex;
+color:ivory;
+transition: 1s;
+border:2px outset #fbfffb;
+border-radius:10%;
+
+}
+.footerimg{
+    display:flex;
+    flex-flow: row;
+    width:30%; 
+}
+.find{display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+}
+.contain{
+    display: flex;
+flex-flow: row;
+}
+.end{width: 45%;
+display: flex;
+}
+
+@media(max-width: 800px){
+
+}
+@media(max-width:500px){
+    nav{display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        background-color:whitesmoke;
+        
+        }
+        .lnk{
+        display:flex;
+    flex-flow: row;}
+        .links{display: flex;
+            align-items: center;
+            background-color:ivory;
+        }
+        .logo{
+            width:50%;
+        display: flex;
+        justify-content: center;
+        
+        }
+        .aboutSect{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 100%;
+            height:70vh;
+            background:url('/Users/Czar/Desktop/LambdaProjects/HTML-CSS-Responsive-Practice/images/about-img.jpg');
+            background-position: top right;
+            background-size: cover;
+        }
+        .aboutText{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            margin:auto;
+        }
+        #about h2{
+        color:green;
+        }.plantimg{display:flex;
+            flex-flow: column;
+            width: 100%;   
+        }
+        .textPlant{display: flex;
+            flex-direction: column;
+            width: 100%;    
+        }
+        .textPlantOne{display: flex;
+           flex-direction: column;
+            width: 100%;        
+        }    
+        .types{display: flex;
+            flex-flow: column;
+            margin: auto;
+            width: 50%;       
+        padding:2%;
+        }
+        .final{display: flex;
+            width: 100%;
+            flex-flow: column;
+        background: green;
+        align-items: center;
+        border: 3px outset black;
+            }
+       
 }
